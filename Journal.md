@@ -2,19 +2,27 @@
 I tried to use Capacitors and Diodes to build a circuit that has 6 leds that light up seqentually. Why? Becouse i couldn think of anything else.
 
 ## 14.3.2026
-Firstly i followed the tutorial.  
-After that i had to research and try multiple times to get it working. I first researched diffrent methods to delay the Leds turning on and turning off. after the research was done, i had to try and do it. The research showed me that i need to use a combination of resistors capacitors and diodes. 
+Firstly i followed the tutorial.
+Once i was done with the tutorial i started looking for interesting circuits that used RC timing, after i saw a few of them i started experimenting in falstad, first just with one led, but it didnt work since i was putting the resistor in series with the C, but when i put the resistor in parallel with the C it worked, after i got it working with 1 led I tried doing it with 2 leds or 'cells' but that didnt work anymore since the C from the second LED just started powering the first LED so i had to use diodes to prevent that from happening. Since I made it work with 2 leds i used 3 leds to form 3 'cells'.
 > The diodes will prevent the capacitor from powering the previous Led while the capacitor acts as both a power bank and a delay.
-> 
-But i didnt really understand this at first, so i tried a lot of times trying diffrent combinations of capacitors in series with a resistor etc.. until i figuered it out.
 
-> In the end i had a Chain of 3 Leds turning on seqentually but it didnt work that well
+<img width="600" height="339" alt="EmPau" src="https://github.com/user-attachments/assets/dc2ace11-b4f5-46c7-b828-78f68e88df9b" />  
+
+> In the end i had a Chain of 3 Leds turning on seqentually but it didnt look the best.
 
 ### Time spent: 1.5 H
 
 ## 15.3.2026
 > Since i was tired yesterday i had to stop.
 
-Today i edited both the layout and the amount of Leds from 3 to 6. I also completly reordered how stuff was. The capacitor values were changed too. I made them jump by 50uF (not counting the first) and the last 2 jump by a 100 uF since that seems to work the best
+I expanded from 3 to 6 leds for a better look, i reordered stuff so it looks cleaner and less like spaghetti. And edited the Capacitor values :
+  - LED 1 : 10 uF
+  - Led 2 : 50 uF
+  - LED 3 : 100 uF
+  - LED 4 : 150 Uf
+  - LED 5 : 200 uF
+  - LED 6 : 300 uF
 
+I chose these values since they looked the best to me.
+<img width="1097" height="603" alt="screen" src="https://github.com/user-attachments/assets/e82f49f8-dd61-45bf-9e1d-a73b906f0ef9" />
 ### Time spent: 0.5 H
